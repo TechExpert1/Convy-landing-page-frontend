@@ -1,0 +1,17 @@
+Key Components to Build
+
+Header - Navigation with logo and "Order Food" button
+Hero - Main section with "Your Favorite Meals Delivered Fresh!" and phone mockup
+Features - The three feature cards (Fast Delivery, Exclusive Deals, Easy Payment)
+AppPreview - The section showing app screens with "Bringing you the best meals"
+Categories - Popular categories with food images
+Stats - Bottom section with the statistics (1.5k+ downloads, etc.)
+
+Next Steps
+
+Start with the Header component - create a simple navigation
+Build the Hero section with the main headline and CTA button
+Add the Features section with the three cards
+Implement the app preview section
+Create the categories section
+Finish with the stats footer
