@@ -11,7 +11,7 @@ const Features = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Fast Delivery</h3>
             <p className="text-gray-600">
-              Promise to deliver within 30 minutes
+              Hot and fresh, delivered right to your doorstep
             </p>
           </div>
           <div className="text-center">
@@ -20,7 +20,7 @@ const Features = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Exclusive Deals</h3>
             <p className="text-gray-600">
-              Get the most exclusive deals only available in our app
+              Enjoy savings with our daily offers and discounts
             </p>
           </div>
           <div className="text-center">
@@ -29,7 +29,7 @@ const Features = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Easy Payment</h3>
             <p className="text-gray-600">
-              You can pay cash on delivery and via card
+              Multople payment methods to make checkout.
             </p>
           </div>
         </div>

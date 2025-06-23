@@ -25,8 +25,8 @@ const Hero = () => {
             <div className="w-56 rounded-[2.5rem] bg-cyan-500 shadow-2xl pb-6 pt-2 px-2 flex flex-col items-center">
               {/* Top bar */}
               <div className="w-full flex justify-between items-center px-4 py-1">
-                <div className="w-8 h-2"></div>
-                <div className="w-8 h-2 flex justify-end space-x-1">
+                <div className="w-8 h-20"></div>
+                <div className="w-8 h-20 flex justify-end space-x-1">
                   <div className="w-1 h-1 bg-black rounded-full"></div>
                   <div className="w-1 h-1 bg-black rounded-full"></div>
                 </div>
@@ -37,10 +37,11 @@ const Hero = () => {
                   conv
                   <span className="text-yellow-400 not-italic">y</span>
                 </span>
-                <div className="flex justify-center space-x-2 mt-1">
-                  <span className="w-4 h-2 bg-white rounded-b-full inline-block"></span>
-                  <span className="w-4 h-2 bg-white rounded-b-full inline-block"></span>
-                </div>
+                <div className="flex items-center mt-[-15px] ml-[-30px]">
+                <span className="w-[80px] h-1 bg-yellow-400 rounded-full"></span>
+                <span className="block w-3.5 h-2 bg-white rounded-b-full ml-[-60px] mt-4"></span>
+                <span className="block w-3.5 h-2 bg-white rounded-b-full ml-4 mt-4"></span>
+              </div>
               </div>
               {/* White card */}
               <div className="bg-white rounded-2xl shadow-lg px-4 py-6 w-full -mb-8 z-10">
@@ -51,7 +52,7 @@ const Hero = () => {
                     Easily shop all the essentials,<br />
                     delivered straight to your door.
                   </p>
-                  <button className="bg-cyan-500 text-white px-4 py-2 rounded-full text-xs font-semibold w-full mb-2">
+                  <button className="bg-cyan-500 text-white px-4 py-2 text-xs font-semibold w-full mb-2">
                     SHOP CATEGORIES
                   </button>
                   <p className="text-[10px] text-gray-400 underline cursor-pointer">REGISTER AS A RIDER</p>

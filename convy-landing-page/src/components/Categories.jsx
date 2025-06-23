@@ -5,7 +5,7 @@ const Categories = () => {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">Popular Categories</h2>
+          <h2 className="text-3xl font-bold text-cyan-500">Popular Categories</h2>
           <button className="bg-cyan-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
             →
           </button>
