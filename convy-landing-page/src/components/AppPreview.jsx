@@ -5,23 +5,13 @@ const AppPreview = () => {
     <section className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white rounded-2xl p-4 shadow-lg">
-                <div className="w-full h-32 bg-green-100 rounded-xl mb-4 flex items-center justify-center">
-                  <span className="text-3xl">🥗</span>
-                </div>
-                <h4 className="font-semibold text-gray-900">Fresh Salad</h4>
-                <p className="text-sm text-gray-600">$8.99</p>
-              </div>
-              <div className="bg-white rounded-2xl p-4 shadow-lg">
-                <div className="w-full h-32 bg-yellow-100 rounded-xl mb-4 flex items-center justify-center">
-                  <span className="text-3xl">🍕</span>
-                </div>
-                <h4 className="font-semibold text-gray-900">Pizza</h4>
-                <p className="text-sm text-gray-600">$15.99</p>
-              </div>
-            </div>
+          <div className="order-2 lg:order-1 flex justify-center">
+            <img
+              src="/images/appPreview.png"
+              alt="App preview"
+              className="w-full max-w-md object-contain"
+              style={{ background: 'none', boxShadow: 'none', borderRadius: 0 }}
+            />
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">

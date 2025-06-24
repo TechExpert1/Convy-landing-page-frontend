@@ -1,5 +1,41 @@
 import React from 'react';
 
+const categories = [
+  {
+    name: "Soft Drinks",
+    image: "/images/SoftDrinks.png",
+    bg: "bg-white",
+    hoverBg: "hover:bg-cyan-500",
+    contentBg: "bg-white border border-gray-200",
+    textColor: "text-gray-900",
+    hoverText: "hover:text-white",
+    border: "border border-gray-200",
+    emojiBg: "bg-white",
+  },
+  {
+    name: "Chicken Pizza",
+    image: "/images/Pizza.png",
+    bg: "bg-white",
+    hoverBg: "hover:bg-cyan-500",
+    contentBg: "bg-white border border-gray-200",
+    textColor: "text-gray-900",
+    hoverText: "hover:text-white",
+    border: "border border-gray-200",
+    emojiBg: "bg-red-100",
+  },
+  {
+    name: "Desserts",
+    image: "/images/Desserts.png",
+    bg: "bg-white",
+    hoverBg: "hover:bg-cyan-500",
+    contentBg: "bg-white border border-gray-200",
+    textColor: "text-gray-900",
+    hoverText: "hover:text-white",
+    border: "border border-gray-200",
+    emojiBg: "bg-yellow-100",
+  },
+];
+
 const Categories = () => {
   return (
     <section className="py-20">
@@ -7,7 +43,7 @@ const Categories = () => {
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-bold text-cyan-500">Popular Categories</h2>
           <div className="flex space-x-4">
-            <button className="bg-gray-200 text-cyan-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+            <button className="bg-gray-100 text-cyan-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
               ←
             </button>
             <button className="bg-cyan-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
@@ -21,33 +57,33 @@ const Categories = () => {
           your doorstep!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="bg-cyan-500 rounded-2xl p-8 mb-4">
-              <div className="w-24 h-24 bg-white rounded-xl mx-auto flex items-center justify-center">
-                <span className="text-3xl">🥤</span>
+          {categories.map((cat) => (
+            <div
+              key={cat.name}
+              className="text-center transition-colors duration-200"
+            >
+              <div
+                className={
+                  `rounded-2xl p-8 mb-4 border border-gray-200 bg-white transition-colors duration-200
+          hover:bg-cyan-500 group`
+                }
+              >
+                <div className={`w-24 h-24 ${cat.emojiBg} rounded-xl mx-auto flex items-center justify-center transition-colors duration-200 group-hover:bg-white`}>
+                  <img
+                    src={cat.image}
+                    alt={cat.name}
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 transition-colors duration-200 group-hover:text-white">
+                  {cat.name}
+                </h3>
+                <p className="text-gray-600 transition-colors duration-200 group-hover:text-white">
+                  Order now
+                </p>
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Soft Drinks</h3>
-            <p className="text-gray-600">Order now</p>
-          </div>
-          <div className="text-center">
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-4">
-              <div className="w-24 h-24 bg-red-100 rounded-xl mx-auto flex items-center justify-center">
-                <span className="text-3xl">🍕</span>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Chicken Pizza</h3>
-            <p className="text-gray-600">Order now</p>
-          </div>
-          <div className="text-center">
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-4">
-              <div className="w-24 h-24 bg-yellow-100 rounded-xl mx-auto flex items-center justify-center">
-                <span className="text-3xl">🧁</span>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Desserts</h3>
-            <p className="text-gray-600">Order now</p>
-          </div>
+          ))}
         </div>
         <div className="text-center mt-8">
           <button className="bg-cyan-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-600 transition-colors">
