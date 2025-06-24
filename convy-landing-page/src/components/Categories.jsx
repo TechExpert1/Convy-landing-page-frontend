@@ -4,13 +4,18 @@ const Categories = () => {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-bold text-cyan-500">Popular Categories</h2>
-          <button className="bg-cyan-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
-            →
-          </button>
+          <div className="flex space-x-4">
+            <button className="bg-gray-200 text-cyan-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+              ←
+            </button>
+            <button className="bg-cyan-500 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors">
+              →
+            </button>
+          </div>
         </div>
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-4xl font-bold text-black mb-8">
           From your favorite restaurants to
           <br />
           your doorstep!

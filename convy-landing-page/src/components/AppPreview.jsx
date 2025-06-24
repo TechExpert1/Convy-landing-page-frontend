@@ -30,8 +30,8 @@ const AppPreview = () => {
               <span className="text-cyan-500">convenience</span> and care.
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              We deliver hot, fresh meals to your doorstep
-              with amazing speed and amazing quality.
+              We deliver hot, fresh meals to your doorstep,
+              satisfying every craving with speed quality.
             </p>
             <button className="bg-cyan-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-600 transition-colors">
               Try it Now
