@@ -8,14 +8,14 @@ const Header = () => {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex flex-col items-start">
-              <span className="text-2xl font-bold italic text-white leading-none">
+              <span className="text-4xl font-bold italic text-white leading-none">
                 conv
                 <span className="text-yellow-400 italic">y</span>
               </span>
-              <div className="flex items-center mt-[-11px] ml-0.5">
-                <span className="block w-14 h-1 bg-yellow-400 rounded-full"></span>
-                <span className="block w-3.5 h-1.5 bg-white rounded-b-full ml-[-45px] mt-4"></span>
-                <span className="block w-3.5 h-1.5 bg-white rounded-b-full ml-2 mt-4"></span>
+              <div className="flex items-center mt-[-13px] ml-[-6px]">
+                <span className="block w-24 h-1 bg-yellow-400 rounded-full"></span>
+                <span className="block w-5 h-2 bg-white rounded-b-full ml-[-70px] mt-4"></span>
+                <span className="block w-5 h-2 bg-white rounded-b-full ml-4 mt-4"></span>
               </div>
             </div>
           </div>

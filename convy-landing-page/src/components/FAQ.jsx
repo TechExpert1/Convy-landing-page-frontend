@@ -38,7 +38,7 @@ const FAQ = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-cyan-500 mb-4">Frequently Asked Questions</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -49,8 +49,14 @@ const FAQ = () => {
                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
               >
                 <span className="font-semibold text-gray-900">{faq.question}</span>
-                <span className="text-2xl text-cyan-500">
-                  {openFAQ === index ? '−' : '+'}
+                <span className="text-3xl text-black">
+                  {openFAQ === index ? (
+                    // Downward hollow double-line triangle (▽)
+                    <span>&#9663;</span>
+                  ) : (
+                    // Right hollow double-line triangle (▷)
+                    <span>&#9657;</span>
+                  )}
                 </span>
               </button>
               {openFAQ === index && (
