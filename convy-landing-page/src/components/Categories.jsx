@@ -60,26 +60,26 @@ const Categories = () => {
           {categories.map((cat) => (
             <div
               key={cat.name}
-              className="text-center transition-colors duration-200"
+              className="text-center transition-colors duration-200 flex justify-center"
             >
               <div
                 className={
-                  `rounded-2xl p-8 mb-4 border border-gray-200 bg-white transition-colors duration-200
+                  `w-72 rounded-2xl p-8 mb-4 border border-gray-200 bg-white transition-colors duration-200
           hover:bg-cyan-500 group`
                 }
               >
-                <div className={`w-24 h-24 ${cat.emojiBg} rounded-xl mx-auto flex items-center justify-center transition-colors duration-200 group-hover:bg-white`}>
+                <div className="w-full flex items-center justify-center mb-4">
                   <img
                     src={cat.image}
                     alt={cat.name}
-                    className="w-16 h-16 object-contain"
+                    className="w-44 h-44 object-contain"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 transition-colors duration-200 group-hover:text-white">
                   {cat.name}
                 </h3>
                 <p className="text-gray-600 transition-colors duration-200 group-hover:text-white">
-                  Order now
+                  Order now &gt;
                 </p>
               </div>
             </div>
