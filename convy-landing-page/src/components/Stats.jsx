@@ -7,7 +7,7 @@ const Stats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
           <div>
             <div className="text-4xl font-bold mb-2">1.5k+</div>
-            <div className="text-cyan-100">Daily orders</div>
+            <div className="text-cyan-100">Downloads</div>
           </div>
           <div>
             <div className="text-4xl font-bold mb-2">1.5k+</div>
@@ -15,7 +15,7 @@ const Stats = () => {
           </div>
           <div>
             <div className="text-4xl font-bold mb-2">1.5k+</div>
-            <div className="text-cyan-100">Delivered orders</div>
+            <div className="text-cyan-100">Monthly orders</div>
           </div>
         </div>
       </div>
