@@ -6,6 +6,10 @@ DOESNT SCALE WELL ALONG THE X AXIS
    #00B0C8 bg: 70 (height)
 
 
+   use space-y-0 instead of top
+   use for lineHeight leading-snug
+
+
 
 
 
