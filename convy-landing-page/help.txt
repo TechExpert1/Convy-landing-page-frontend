@@ -4,3 +4,11 @@ DOESNT SCALE WELL ALONG THE X AXIS
       logo: 85 x 33
       Get The App button: 168 x 45, font: Montserrat
    #00B0C8 bg: 70 (height)
+
+
+
+
+
+TODO LIST:
+   -Fix the position: 'absolute (/fixed)' problem
+   -get done w the header, hero, features components

@@ -5,9 +5,24 @@ const Features = () => {
   return (
     <div className="bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Single card around all features */}
-        <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* single card around features */}
+        <div
+          style={{
+            width: 1161,
+            height: 145,
+            position: 'absolute',
+            top: 739,
+            left: 140,
+            borderRadius: 20,
+            boxShadow: '0px 2px 7px 2px #0000001A',
+            background: '#fff',
+            padding: 32, // p-8 is 32px
+            border: '1px solid #f3f4f6', // border-gray-100
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
             {/* Fast Delivery */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
