@@ -10,7 +10,7 @@ const Features = () => {
             {/* fastDelivery */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 py-[10px] ">
-                <div className="w-[56px] h-[56px] bg-cyan-100 rounded-full flex items-center justify-center">
+                <div className="w-[56px] h-[56px] bg-[#00B0C81A] rounded-full flex items-center justify-center">
                   <img src="/images/icons/FastDelivery.png" className="w-[31.41px] h-[24.83px]" />
                 </div>
               </div>
@@ -27,7 +27,7 @@ const Features = () => {
             {/*Exclusive Deals */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 py-[10px] ">
-                <div className="w-[56px] h-[56px] bg-cyan-100 rounded-full flex items-center justify-center">
+                <div className="w-[56px] h-[56px] bg-[#00B0C81A] rounded-full flex items-center justify-center">
                   <img src="/images/icons/ExclusiveDeals.png"className="w-[31.41px] h-[24.83px]"/>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const Features = () => {
             {/*Easy Payment */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 py-[10px]">
-                <div className="w-[56px] h-[56px] bg-cyan-100 rounded-full flex items-center justify-center">
+                <div className="w-[56px] h-[56px] bg-[#00B0C81A] rounded-full flex items-center justify-center">
                   <img src="/images/icons/EasyPayment.png" className="w-[31.41px] h-[24.83px]"/>
                 </div>
               </div>
