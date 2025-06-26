@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AppPreview = () => {
   return (
     <section className="bg-white py-20 -mt-[42px]">
