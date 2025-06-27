@@ -76,9 +76,9 @@ const Categories = () => {
             Order Now
             <span className="ml-2 flex items-center">
               <img
-                src="/images/icons/gt-black.png" alt=">" className="group-hover:hidden inline w-[10.58px] h-[13.29px] ml-[5px]" />
+                src="/images/icons/gt-black.png" alt=">" className="group-hover:hidden inline w-[10.58px] h-[14.29px] ml-[5px]" />
               <img
-                src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[10.58px] h-[13.29px]"
+                src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[10.58px] h-[14.29px] ml-[5px]]"
               />
             </span>
           </p>
