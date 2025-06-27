@@ -11,6 +11,17 @@ DOESNT SCALE WELL ALONG THE X AXIS
 
 
 
+width: 350;
+height: 54;
+top: 1563px;
+left: 99px;
+font-family: Poppins;
+font-weight: 500;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+
+
 
 
 TODO LIST:
