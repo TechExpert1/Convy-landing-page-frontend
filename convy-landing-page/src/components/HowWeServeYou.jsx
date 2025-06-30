@@ -66,6 +66,6 @@ const HowWeServeYou = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default HowWeServeYou;
