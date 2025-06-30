@@ -38,7 +38,7 @@ const Categories = () => {
 		<section className="py-[45px]">
 			<div className="max-w-[1242.55px] mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center mb-[27px]">
-					<h2 className="w-[350px] h-[54px] font-['Poppins'] font-medium text-[36px] leading-snug tracking-[0%] text-[#00B0C8] ml-[-55px]">
+					<h2 className="w-[350px] h-[54px] font-['Poppins'] font-medium text-[36px] leading-snug tracking-[0%] text-[#00B0C8] -ml-[55px]">
 						Popular Categories
 					</h2>
 					<div className="flex space-x-4 mr-[-35px]">
@@ -67,28 +67,24 @@ const Categories = () => {
 									<img src={cat.image} className="w-[217px] h-[207px] object-contain" />
 								</div>
 								<h3 className={`w-[138px] h-[39px] font-['Poppins'] font-medium text-[26px] leading-snug tracking-[0%] text-[#333333] transition-colors duration-200 group-hover:text-white whitespace-nowrap flex flex-col justify-end mt-[34px] py-[11px]
-              ${cat.name === 'Chicken Pizza' ? 'ml-10' : 'mx-auto'}
-            `}> {cat.name}
-                  </h3>
-								<p
-            className={`w-[150px] h-[33px] font-['Poppins'] font-normal text-[22px] leading-[100%] tracking-[0%] text-[#333333] flex items-center mx-auto transition-colors duration-200 group-hover:text-white ${cat.name === 'Chicken Pizza' ? 'ml-16' : ''} `}
-          >
+              ${cat.name === 'Chicken Pizza' ? 'ml-10' : 'mx-auto'}`}> {cat.name}
+                  				</h3>
+			<p className={`w-[150px] h-[33px] font-['Poppins'] font-normal text-[22px] leading-[100%] tracking-[0%] text-[#333333] flex items-center mx-auto transition-colors duration-200 group-hover:text-white ${cat.name === 'Chicken Pizza' ? 'ml-16' : ''} `}>
             Order Now
             <span className="ml-2 flex items-center">
               <img
                 src="/images/icons/gt-black.png" alt=">" className="group-hover:hidden inline w-[10.58px] h-[14.29px] ml-[5px]" />
               <img
-                src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[10.58px] h-[14.29px] ml-[5px]]"
-              />
+                src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[10.58px] h-[14.29px] ml-[5px]" />
             </span>
           </p>
 							</div>
 						</div>
 					))}
 				</div>
-				<div className="text-center mt-8">
+				<div className="text-center mt-4">
 					<button className="bg-[#00B0C8] w-[295px] h-[80px] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
-						<span className="font-['Poppins'] font-semibold text-[26px] leading-[100%] tracking-[0%] text-white w-full text-center">
+						<span className="font-['Poppins'] font-semibold text-[26px] text-white w-full text-center">
 							See more
 						</span>
 					</button>
