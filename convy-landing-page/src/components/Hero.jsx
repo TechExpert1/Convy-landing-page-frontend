@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="h-screen grid grid-cols-2 relative min-h-[700px]">
-      <div className="flex flex-col items-start justify-center relative pl-[170px]">
+      <div className="flex flex-col items-start justify-center relative pl-[220px]">
         {/* blue badge */}
         <div className="flex items-center gap-2 mb-6">
           {/* Rectangle background */}
