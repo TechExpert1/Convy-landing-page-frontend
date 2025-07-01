@@ -6,7 +6,7 @@ const HowWeServeYou = () => {
   ];
 
   return (
-    <section className="py-[56px] bg-white">
+    <section className="py-[28px] bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-[35px] text-['Poppins']">
           <h2 className="text-[36px] leading-snug max-w-[334px] max-h-[54px] font-medium text-[#00B0C8] mb-[27px] mx-auto text-center">

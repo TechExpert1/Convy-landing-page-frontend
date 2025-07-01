@@ -2,82 +2,69 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-cyan-500 text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-          {/* Logo and Description */}
-          <div className="space-y-6">
-            {/* Logo */}
-            <div className="flex flex-col items-start mt-2 mb-4 ml-4">
-              <span className="text-5xl font-bold text-white italic tracking-wide">
-                conv
-                <span className="text-yellow-400 not-italic">y</span>
-              </span>
-              <div className="flex items-center mt-[-20px] ml-0">
-                <span className="w-[130px] h-1.5 bg-yellow-400 rounded-full ml-18"></span>
-                <span className="block w-5 h-3 bg-white rounded-b-full ml-[-92px] mt-6"></span>
-                <span className="block w-5 h-3 bg-white rounded-b-full ml-8 mt-6"></span>
+    <>
+      <footer className="bg-[#00B0C8] text-white mt-[60px] pb-[42px]">
+        <div className="max-w-[1440px] w-full h-[461px] mx-auto px-[50px]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[345px] font-['Poppins'] items-center ">
+            <div className="space-y-6">
+              {/* Logo */}
+              <div className="flex flex-col items-start mt-[74px] mb-4">
+                <img src="/images/Convy_app_logo 1.png" className="w-[216px] h-[84px] object-contain" />
+              </div>
+              <p className="text-white text-[20px] leading-[34px] w-[376px] h-[136px] font-normal">
+                Stay connected with us for great meals, updates, and opportunities – 
+                your satisfaction is our priority every step of the way!
+              </p>
+              <div className="flex space-x-[26px]">
+                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/facebook.png" className="w-[10.5px] h-[20px]" alt="Facebook" />
+                </div>
+                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/instagram.png" className="w-[20px] h-[20px]" alt="Instagram" />
+                </div>
+                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/x.png" className="w-[14px] h-[14px]" alt="X" />
+                </div>
               </div>
             </div>
-            <p className="text-cyan-100 text-lg leading-relaxed max-w-sm">
-              Stay connected with us for great meals, updates, and opportunities – 
-              your satisfaction is our priority every step of the way!
-            </p>
-            <div className="flex space-x-4">
-              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
-                <span className="text-xl font-semibold">f</span>
-              </div>
-              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" fill="none"/>
-                  <circle cx="12" cy="12" r="4" stroke="currentColor" fill="none"/>
-                  <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
-                </svg>
-              </div>
-              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
-                <span className="text-xl font-semibold">X</span>
-              </div>
-            </div>
-          </div>
 
-          {/* Newsletter Section */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Get the latest information and</h3>
-              <p className="text-2xl font-bold">subscribe to our newsletter</p>
+            {/*Newsletter sec*/}
+            <div className="mt-[154px] mb-[154px] space-y-6">
+              <div>
+                <h3 className="w-[388px] h-[58px] text-[22px] font-bold mb-[28px]">
+                  Get the latest information and <br />subscribe to our newsletter
+                </h3>
+              </div>
+              <div className="relative w-[380px] h-[68px]">
+                <input
+                  type="email" placeholder="Enter email" className="w-full h-full px-6 rounded-[17px] text-[#4F4E4E] placeholder-[#4F4E4E] bg-white text-[17px] font-normal pr-20"
+                />
+                <button className="absolute right-2 top-1/2 -translate-y-1/2 px-2 rounded-full flex items-center justify-center">
+                  <img src="/images/icons/send.png" className="w-[33px] h-[33px]" alt="Send" />
+                </button>
+              </div>
             </div>
-            <div className="relative">
-              <input
-                type="email"
-                placeholder="Enter email"
-                className="w-full px-6 py-4 rounded-full text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white pr-16"
-              />
-              <button className="absolute right-2 top-2 bottom-2 bg-cyan-500 text-white px-4 rounded-full hover:bg-cyan-600 transition-colors">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
-              </button>
-            </div>
-          </div>
 
-          {/* Contact Information */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold">Contact</h3>
-            <div className="space-y-3 text-cyan-100 text-lg">
-              <p>+123 456 7890</p>
-              <p>info@convy.com</p>
+            {/*contact info*/}
+            <div className="space-y-6 mt-[166.5px] mb-[166.5px]">
+              <h3 className="text-[22px] leading-[34px] w-[92px] h-[34px] font-bold">Contact</h3>
+              <div className="space-y-3 text-white text-[20px] leading-[34px] font-normal">
+                <p>+123 456 7890</p>
+                <p>info@convy.com</p>
+              </div>
             </div>
           </div>
         </div>
+      </footer>
+      <div className="w-full flex justify-center items-center bg-white mt-[28px] mb-[28px]">
+        <p
+          className="font-['Roboto'] font-medium text-[30px] leading-[34px] text-[#231F20] text-center"
+          style={{ width: 456, height: 34, verticalAlign: 'middle' }}
+        >
+          © 2024 Convy. All rights reserved.
+        </p>
       </div>
-    </footer>
+    </>
   );
 };
 
