@@ -11,6 +11,13 @@ export default {
         'convy-dark': '#1a1a1a',
         'convy-gray': '#f8f9fa',
       },
+
+      screens: {
+        sm: "320px",
+        md: "768px",
+        lg: "1152px",
+      },
+      
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
       }
@@ -18,3 +25,6 @@ export default {
   },
   plugins: [],
 }
+
+
+//define screensizes
