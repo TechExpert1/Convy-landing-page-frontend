@@ -1,62 +1,114 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const categories = [
+  { name: 'Soft Drinks', image: '/images/SoftDrinks.png' },
+  { name: 'Chicken Pizza', image: '/images/Pizza.png' },
+  { name: 'Desserts', image: '/images/Desserts.png' },
+  // Repeat for demo scroll effect
   { name: 'Soft Drinks', image: '/images/SoftDrinks.png' },
   { name: 'Chicken Pizza', image: '/images/Pizza.png' },
   { name: 'Desserts', image: '/images/Desserts.png' }
 ];
 
-const Categories = () => (
-  <section className="py-[45px]">
-    <div className="max-w-[1242.55px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between items-center mb-[27px]">
-        <h2 className="w-[350px] h-[54px] font-['Poppins'] font-medium text-[36px] leading-snug text-[#00B0C8] -ml-[55px]">
-          Popular Categories
-        </h2>
-        <div className="flex space-x-4 mr-[-35px]">
-          {['/images/icons/backwardArrow.png', '/images/icons/forwardArrow.png'].map((icon, i) => (
-            <button key={i} className={`${i ? 'bg-[#00B0C8] hover:bg-cyan-600' : 'bg-[#D9D9D942] hover:bg-gray-300'} w-[71.15px] h-[71.15px] rounded-full flex items-center justify-center transition-colors`}>
-              <img src={icon} className="w-[30px] h-[30px]" alt="" />
+const Categories = () => {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    const container = scrollRef.current;
+    if (!container) return;
+    
+    // Check if we're on mobile (screen width < 640px)
+    const isMobile = window.innerWidth < 640;
+    
+    let scrollAmount;
+    if (isMobile) {
+      // On mobile, scroll by the width of one card plus gap
+      const cardWidth = container.scrollWidth / categories.length;
+      scrollAmount = cardWidth;
+    } else {
+      // On desktop, scroll by full container width to show next 3
+      const containerWidth = container.offsetWidth;
+      scrollAmount = containerWidth;
+    }
+    
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className="py-6 sm:py-8 md:py-10 lg:py-[28px] px-4 sm:px-6 md:px-8 lg:px-16">
+      <div className="max-w-[1242.55px] mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row w-full justify-center md:justify-between items-center mb-6 sm:mb-8 md:mb-[27px] gap-3 sm:gap-2">
+          <h2 className="w-full sm:w-auto md:w-[350px] h-auto md:h-[54px] font-['Poppins'] font-medium text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] leading-snug text-[#00B0C8] ml-0 md:-ml-[55px] mb-2 md:mb-0 text-center sm:text-left">
+            Popular Categories
+          </h2>
+          <div className="flex space-x-2 sm:space-x-3 md:space-x-4 mr-0 md:mr-[-35px]">
+            <button
+              onClick={() => scroll('left')}
+              className="bg-[#D9D9D942] hover:bg-gray-300 w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[60px] md:h-[60px] lg:w-[71.15px] lg:h-[71.15px] rounded-full flex items-center justify-center transition-colors"
+              type="button"
+              aria-label="Scroll left"
+            >
+              <img src="/images/icons/backwardArrow.png" className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[30px] lg:h-[30px]" />
             </button>
-          ))}
+            <button
+              onClick={() => scroll('right')}
+              className="bg-[#00B0C8] hover:bg-cyan-600 w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[60px] md:h-[60px] lg:w-[71.15px] lg:h-[71.15px] rounded-full flex items-center justify-center transition-colors"
+              type="button"
+              aria-label="Scroll right"
+            >
+              <img src="/images/icons/forwardArrow.png" className="w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[30px] lg:h-[30px]" />
+            </button>
+          </div>
+        </div>
+
+        <p className="w-auto md:w-[698px] h-auto md:h-[120px] font-['Poppins'] font-bold text-[22px] sm:text-[28px] md:text-[36px] lg:text-[40px] leading-snug text-[#333333] mb-6 sm:mb-8 ml-0 md:ml-[-55px] text-center sm:text-left">
+          From your favorite restaurants to<br className="hidden sm:block" />
+          <span className="sm:hidden"> </span>your doorstep!
+        </p>
+
+        {/*scrollable container for categories*/}
+        <div className="overflow-hidden">
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto no-scrollbar gap-4 sm:gap-6 md:gap-8"
+            style={{ scrollBehavior: 'smooth', scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {categories.map(cat => (
+              <div key={Math.random() + cat.name} className="text-center transition-colors duration-200 flex-shrink-0 flex justify-center" style={{ minWidth: 'calc(33.333% - 21.33px)' }}>
+                <div className="w-full max-w-[300px] sm:max-w-[280px] md:max-w-[320px] lg:w-[348px] h-[350px] sm:h-[380px] md:h-[390px] lg:h-[402px] rounded-[18px] border border-[#00000033] p-4 sm:p-6 md:p-8 mb-4 bg-white transition-colors duration-200 hover:bg-[#00B0C8] group flex flex-col justify-start">
+                  <div className="w-full flex items-center justify-center mb-3 sm:mb-4 flex-grow">
+                    <img src={cat.image} className="w-[160px] h-[152px] sm:w-[180px] sm:h-[172px] md:w-[200px] md:h-[190px] lg:w-[217px] lg:h-[207px] object-contain" alt={cat.name} />
+                  </div>
+                  <h3
+                    className={`w-full sm:w-[130px] md:w-[138px] h-auto font-['Poppins'] font-medium text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-snug text-[#333333] transition-colors duration-200 group-hover:text-white whitespace-nowrap flex flex-col justify-end mt-2 sm:mt-4 md:mt-[34px] py-[8px] sm:py-[10px] md:py-[11px] ${
+                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-2 md:ml-4 lg:ml-[16px]' : 'mx-auto'
+                    }`}
+                  >
+                    {cat.name}
+                  </h3>
+                  <p
+                    className={`w-full sm:w-[140px] md:w-[150px] h-auto font-['Poppins'] font-normal text-[18px] sm:text-[20px] md:text-[22px] leading-[100%] text-[#333333] flex items-center mx-auto transition-colors duration-200 group-hover:text-white ${
+                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-4 md:ml-6 lg:ml-10' : ''
+                    }`}
+                  >
+                    Order Now
+                    <span className="ml-2 flex items-center">
+                      <img src="/images/icons/gt-black.png" alt=">" className="group-hover:hidden inline w-[8px] h-[12px] sm:w-[10px] sm:h-[13px] md:w-[10.58px] md:h-[14.29px] ml-[5px]" />
+                      <img src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[8px] h-[12px] sm:w-[10px] sm:h-[13px] md:w-[10.58px] md:h-[14.29px] ml-[5px]" />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      
-      <p className="w-[698px] h-[120px] font-['Poppins'] font-bold text-[40px] leading-snug text-[#333333] mb-8 ml-[-55px]">
-        From your favorite restaurants to<br />your doorstep!
-      </p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {categories.map(cat => (
-          <div key={cat.name} className="text-center transition-colors duration-200 flex justify-center">
-            <div className="w-[348px] h-[402px] rounded-[18px] border border-[#00000033] p-8 mb-4 bg-white transition-colors duration-200 hover:bg-[#00B0C8] group flex flex-col justify-start">
-              <div className="w-full flex items-center justify-center mb-4">
-                <img src={cat.image} className="w-[217px] h-[207px] object-contain" alt={cat.name} />
-              </div>
-              <h3 className={`w-[138px] h-[39px] font-['Poppins'] font-medium text-[26px] leading-snug text-[#333333] transition-colors duration-200 group-hover:text-white whitespace-nowrap flex flex-col justify-end mt-[34px] py-[11px] ${cat.name === 'Chicken Pizza' ? 'ml-10' : 'mx-auto'}`}>
-                {cat.name}
-              </h3>
-              <p className={`w-[150px] h-[33px] font-['Poppins'] font-normal text-[22px] leading-[100%] text-[#333333] flex items-center mx-auto transition-colors duration-200 group-hover:text-white ${cat.name === 'Chicken Pizza' ? 'ml-16' : ''}`}>
-                Order Now
-                <span className="ml-2 flex items-center">
-                  <img src="/images/icons/gt-black.png" alt=">" className="group-hover:hidden inline w-[10.58px] h-[14.29px] ml-[5px]" />
-                  <img src="/images/icons/gt.png" alt=">" className="hidden group-hover:inline w-[10.58px] h-[14.29px] ml-[5px]" />
-                </span>
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-      
-      <div className="text-center mt-4">
-        <button className="bg-[#00B0C8] w-[295px] h-[80px] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
-          <span className="font-['Poppins'] font-semibold text-[26px] text-white w-full text-center">
-            See more
-          </span>
-        </button>
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Categories;

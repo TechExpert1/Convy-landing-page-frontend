@@ -15,35 +15,40 @@ const FAQ = () => {
   return (
     <section className="py-[28px] bg-white">
       <div className="font-['Poppins'] flex flex-col items-center px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-[56px]">
-          <h2 className="text-[36px] max-w-[503px] w-full h-[54px] font-medium leading-snug mx-auto text-[#00B0C8] mb-4">
+        <div className="text-center mb-[32px] sm:mb-[56px]">
+          <h2 className="text-[18px] xs:text-[20px] sm:text-[36px] max-w-[503px] w-full min-h-[28px] sm:min-h-[54px] font-medium leading-snug mx-auto text-[#00B0C8] mb-3 sm:mb-4">
             Frequently Asked Questions
           </h2>
         </div>
-        <div className="w-[1221px] grid grid-cols-1 md:grid-cols-2 gap-x-[94px] gap-y-[62px] mx-auto items-start">
+        <div className="w-full max-w-[1221px] grid grid-cols-1 md:grid-cols-2 gap-x-3 md:gap-x-[94px] gap-y-4 md:gap-y-[62px] mx-auto items-start">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="bg-white shadow-none max-w-[556px] w-full border-b border-[#00000026] flex flex-col justify-start items-start transition-all duration-200"
+              className={`bg-white shadow-none max-w-full md:max-w-[556px] w-full border-b border-[#00000026] flex flex-col justify-start items-start transition-all duration-200
+                ${openFAQ === i ? 'md:row-span-2' : ''}
+              `}
             >
               <button
                 onClick={() => setOpenFAQ(openFAQ === i ? null : i)}
-                className={`w-full px-6 pt-4 pb-4 text-left flex justify-between items-start hover:bg-gray-50 transition-colors ${
-                  openFAQ === i ? 'mb-[36px]' : ''
+                className={`w-full px-2 xs:px-3 sm:px-6 pt-2 xs:pt-3 pb-2 xs:pb-3 text-left flex justify-between items-start hover:bg-gray-50 transition-colors ${
+                  openFAQ === i ? 'mb-[20px] sm:mb-[36px]' : ''
                 }`}
               >
-                <span className="font-medium text-[28px] leading-snug text-[#333333]">{faq.question}</span>
-                <span className="ml-4">
+                <span className="font-medium text-[13px] xs:text-[15px] sm:text-[24px] md:text-[28px] leading-snug text-[#333333]">{faq.question}</span>
+                <span className="ml-2 xs:ml-3">
                   <img
-                    src="/images/icons/faqic.png"  className={`w-[12.5px] h-[22.7px] transition-transform duration-200 ${openFAQ === i ? 'rotate-[90deg]' : ''}`}
+                    src="/images/icons/faqic.png"
+                    className={`w-[9px] h-[15px] xs:w-[11px] xs:h-[19px] sm:w-[12.5px] sm:h-[22.7px] transition-transform duration-200 ${openFAQ === i ? 'rotate-[90deg]' : ''}`}
                   />
                 </span>
               </button>
-              {openFAQ === i && (
-                <div className="px-6 pb-[24px]">
-                  <p className="font-['Poppins'] font-normal text-[24px] text-[#797979] leading-snug">{faq.answer}</p>
-                </div>
-              )}
+              <div className={`overflow-hidden transition-all duration-300 ${openFAQ === i ? 'max-h-[500px] md:min-h-[60px]' : 'max-h-0'} w-full`}>
+                {openFAQ === i && (
+                  <div className="px-2 xs:px-3 sm:px-6 pb-[12px] sm:pb-[24px]">
+                    <p className="font-['Poppins'] font-normal text-[12px] xs:text-[14px] sm:text-[20px] md:text-[24px] text-[#797979] leading-snug">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
