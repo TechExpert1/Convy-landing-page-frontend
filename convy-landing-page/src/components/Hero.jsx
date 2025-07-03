@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 relative px-4 sm:px-8 md:px-16 lg:px-0">
-      <div className="flex flex-col items-start justify-center relative lg:pl-[220px] py-8 lg:py-0">
+      <div className="flex flex-col items-start justify-center relative lg:pl-[160px] py-8 lg:py-0">
         {/* blue badge */}
         <div className="flex items-center gap-2 mb-6 relative">
           <div className="w-[160px] sm:w-[180px] md:w-[198px] h-[40px] sm:h-[45px] md:h-[50px] bg-[#00B0C81A] rounded-[69px]"></div>
@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/*img container */}
-      <div className="flex flex-col items-center justify-center relative mt-8 lg:mt-0">
+      <div className="flex flex-col items-center justify-center relative mt-8 lg:mt-0 lg:pl-[40px]">
         <div className="relative w-[200px] sm:w-[240px] md:w-[298px] h-[380px] sm:h-[450px] md:h-[557px]">
           {/* bg rectangle */}
           <div className="absolute bottom-[24px] left-0 w-full h-[50%] rounded-[47px] sm:rounded-[40px] md:rounded-[47px] bg-[#00AFCA] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)] z-10"></div>
