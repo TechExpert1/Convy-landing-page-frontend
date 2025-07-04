@@ -6,7 +6,7 @@ const AppPreview = () => {
           <div className="order-2 lg:order-1 flex justify-center lg:justify-center">
             <img src="/images/appPreview.png" className="w-[250px] h-[325px] sm:w-[300px] sm:h-[390px] md:w-[350px] md:h-[455px] lg:w-[436.09px] lg:h-[567.43px] object-contain rounded-[20px] sm:rounded-[25px] md:rounded-[32px]" />
           </div>
-          <div className="order-1 lg:order-2 font-['Poppins'] max-w-[703px] flex flex-col items-start justify-center text-left">
+          <div className="order-1 lg:order-2 font-['Poppins'] max-w-[703px] flex flex-col items-start justify-center text-left lg:-ml-16">
             <h2 className="font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-tight text-[#333333] mb-4 sm:mb-6">
               Bringing you the best <span className="text-[#00B0C8]">meals</span> with
               <br className="hidden sm:block" />
@@ -17,7 +17,7 @@ const AppPreview = () => {
             </p>
             <button className="w-[200px] sm:w-[250px] md:w-[295px] h-[60px] sm:h-[70px] md:h-[80px] rounded-full bg-[#00B0C8] text-white flex items-center justify-center hover:bg-cyan-600 transition-colors">
               <span className="font-['Poppins'] font-semibold text-[18px] sm:text-[22px] md:text-[26px] text-[#fff] flex items-center justify-center">
-                Try it Now
+                Try It Now
               </span>
             </button>
           </div>

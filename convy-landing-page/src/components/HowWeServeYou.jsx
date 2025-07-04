@@ -33,7 +33,7 @@ const HowWeServeYou = () => {
                   }
                 />
               </div>
-              <h3 className="w-[262px] h-[42px] font-['Poppins'] font-medium text-[28px] leading-snug text-gray-900 transition-colors duration-200 group-hover:text-white text-center mb-4">
+              <h3 className="w-[262px] h-[42px] font-['Poppins'] font-medium text-[28px] md:text-[20px] lg:text-[28px] leading-snug text-gray-900 transition-colors duration-200 group-hover:text-white text-center mb-4">
                 {title}
               </h3>
             </div>

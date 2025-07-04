@@ -3,52 +3,57 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#00B0C8] text-white mt-[60px] pb-[42px]">
-        <div className="max-w-[1440px] w-full h-[461px] mx-auto px-[50px]">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[345px] font-['Poppins'] items-center ">
-            <div className="space-y-6">
-              {/* Logo */}
-              <div className="flex flex-col items-start mt-[74px] mb-4">
-                <img src="/images/Convy_app_logo 1.png" className="w-[216px] h-[84px] object-contain" />
+      <footer className="bg-[#00B0C8] text-white mt-[60px] md:mt-[60px] pb-[42px] md:pb-[42px]">
+        <div className="max-w-[1440px] w-full lg:h-[461px] mx-auto lg:px-[50px] md:px-8 px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[345px] gap-y-8 lg:gap-y-0 font-['Poppins'] lg:items-center">
+            
+            {/* Logo and Description Section */}
+            <div className="lg:space-y-6 space-y-4 lg:pl-12 lg:-mt-[60px] md:pl-8 pl-4">
+              <div className="flex flex-col items-start lg:mt-[74px] md:mt-12 mt-8 mb-4">
+                <img 
+                  src="/images/Convy_app_logo 1.png" 
+                  className="lg:w-[216px] lg:h-[84px] md:w-[180px] md:h-[70px] w-[160px] h-[62px] object-contain" 
+                  alt="Convy Logo"
+                />
               </div>
-              <p className="text-white text-[20px] leading-[34px] w-[376px] h-[136px] font-normal">
+              <p className="text-white lg:text-[20px] md:text-[18px] text-[16px] lg:leading-[34px] md:leading-[28px] leading-[24px] lg:w-[376px] lg:h-[136px] font-normal">
                 Stay connected with us for great meals, updates, and opportunities – 
                 your satisfaction is our priority every step of the way!
               </p>
-              <div className="flex space-x-[26px]">
-                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
-                  <img src="/images/icons/facebook.png" className="w-[10.5px] h-[20px]" alt="Facebook" />
+              <div className="flex lg:space-x-[26px] md:space-x-5 space-x-4">
+                <div className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-9 h-9 aspect-square border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/facebook.png" className="lg:w-[10.5px] lg:h-[20px] md:w-[9px] md:h-[17px] w-[8px] h-[15px]" />
                 </div>
-                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
-                  <img src="/images/icons/instagram.png" className="w-[20px] h-[20px]" alt="Instagram" />
+                <div className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-9 h-9 aspect-square border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/instagram.png" className="lg:w-[20px] lg:h-[20px] md:w-[17px] md:h-[17px] w-[15px] h-[15px]" />
                 </div>
-                <div className="w-12 h-12 border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
-                  <img src="/images/icons/x.png" className="w-[14px] h-[14px]" alt="X" />
+                <div className="lg:w-12 lg:h-12 md:w-10 md:h-10 w-9 h-9 aspect-square border border-white rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-10 transition-all cursor-pointer">
+                  <img src="/images/icons/x.png" className="lg:w-[14px] lg:h-[14px] md:w-[12px] md:h-[12px] w-[11px] h-[11px]"/>
                 </div>
               </div>
             </div>
 
-            {/*Newsletter sec*/}
-            <div className="mt-[154px] mb-[154px] space-y-6">
+            {/* Newsletter Section */}
+            <div className="lg:mt-[154px] lg:mb-[154px] lg:space-y-6 space-y-4">
               <div>
-                <h3 className="w-[388px] h-[58px] text-[22px] font-bold mb-[28px]">
-                  Get the latest information and <br />subscribe to our newsletter
+                <h3 className="lg:w-[388px] lg:h-[58px] lg:text-[22px] md:text-[20px] text-[18px] font-bold lg:mb-[28px] md:mb-6 mb-4 lg:leading-[29px] md:leading-[26px] leading-[24px]">
+                  Get the latest information and <br className="hidden lg:block" />
+                  <span className="lg:hidden">and </span>subscribe to our newsletter
                 </h3>
               </div>
-              <div className="relative w-[380px] h-[68px]">
-                <input
-                  type="email" placeholder="Enter email" className="w-full h-full px-6 rounded-[17px] text-[#4F4E4E] placeholder-[#4F4E4E] bg-white text-[17px] font-normal pr-20"
+              <div className="relative lg:w-[380px] lg:h-[68px] md:w-[340px] md:h-[60px] w-full h-[56px]">
+                <input type="email" placeholder="Enter email" className="w-full h-full lg:px-6 md:px-5 px-4 rounded-[17px] text-[#4F4E4E] placeholder-[#4F4E4E] bg-white lg:text-[17px] md:text-[16px] text-[15px] font-normal pr-16"
                 />
                 <button className="absolute right-2 top-1/2 -translate-y-1/2 px-2 rounded-full flex items-center justify-center">
-                  <img src="/images/icons/send.png" className="w-[33px] h-[33px]" alt="Send" />
+                  <img src="/images/icons/send.png" className="lg:w-[33px] lg:h-[33px] md:w-[28px] md:h-[28px] w-[25px] h-[25px]"/>
                 </button>
               </div>
             </div>
 
-            {/*contact info*/}
-            <div className="space-y-6 mt-[166.5px] mb-[166.5px]">
-              <h3 className="text-[22px] leading-[34px] w-[92px] h-[34px] font-bold">Contact</h3>
-              <div className="space-y-3 text-white text-[20px] leading-[34px] font-normal">
+            {/* Contact Info Section */}
+            <div className="lg:space-y-6 space-y-4 lg:mt-[166.5px] lg:mb-[166.5px]">
+              <h3 className="lg:text-[22px] md:text-[20px] text-[18px] lg:leading-[34px] md:leading-[28px] leading-[24px] lg:w-[92px] lg:h-[34px] font-bold">Contact</h3>
+              <div className="space-y-3 text-white lg:text-[20px] md:text-[18px] text-[16px] lg:leading-[34px] md:leading-[28px] leading-[24px] font-normal">
                 <p>+123 456 7890</p>
                 <p>info@convy.com</p>
               </div>
@@ -56,10 +61,11 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="w-full flex justify-center items-center bg-white mt-[28px] mb-[28px]">
+      
+      {/* Copyright Section */}
+      <div className="w-full flex justify-center items-center bg-white lg:mt-[28px] lg:mb-[28px] md:mt-6 md:mb-6 mt-4 mb-4">
         <p
-          className="font-['Roboto'] font-medium text-[30px] leading-[34px] text-[#231F20] text-center"
-          style={{ width: 456, height: 34, verticalAlign: 'middle' }}
+          className="font-['Roboto'] font-medium lg:text-[30px] md:text-[24px] text-[18px] lg:leading-[34px] md:leading-[28px] leading-[24px] text-[#231F20] text-center lg:w-auto lg:h-[34px] w-full px-4 whitespace-normal lg:whitespace-nowrap align-middle"
         >
           © 2024 Convy. All rights reserved.
         </p>

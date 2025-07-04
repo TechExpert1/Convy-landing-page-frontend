@@ -2,10 +2,10 @@ const Hero = () => {
   return (
     <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 relative px-3 xs:px-4 sm:px-8 md:px-16 lg:px-0">
       <div className="flex flex-col items-start justify-center relative lg:pl-[160px] py-6 xs:py-8 lg:py-0">
-        {/* blue badge */}
+        {/*blue badge */}
         <div className="flex items-center gap-2 mb-4 xs:mb-6 relative">
           <div className="w-[140px] xs:w-[160px] sm:w-[180px] md:w-[198px] h-[36px] xs:h-[40px] sm:h-[45px] md:h-[50px] bg-[#00B0C81A] rounded-[69px]"></div>
-          <span className="absolute left-3 xs:left-4 w-[105px] xs:w-[120px] sm:w-[130px] md:w-[143px] h-[20px] font-['Montserrat'] font-bold text-[11px] xs:text-[10px] sm:text-[12px] md:text-[16px] leading-none tracking-[0%] text-[#00B0C8] flex items-center justify-center z-10">
+          <span className="absolute left-3 xs:left-4 w-[105px] xs:w-[120px] sm:w-[130px] md:w-[143px] h-[20px] font-['Montserrat'] font-bold text-[11px] xs:text-[10px] sm:text-[12px] md:text-[16px] leading-none tracking-[0%] text-[#00B0C8] flex items-center justify-center z-10 whitespace-nowrap">
             More than Faster 
           </span>
           <img src="/images/icons/mdi_run-fast.png" className="absolute right-3 xs:right-4 w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 z-10" />

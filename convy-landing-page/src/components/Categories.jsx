@@ -16,17 +16,14 @@ const Categories = () => {
   const scroll = (direction) => {
     const container = scrollRef.current;
     if (!container) return;
-    
-    // Check if we're on mobile (screen width < 640px)
-    const isMobile = window.innerWidth < 640;
-    
+    const isMobile = window.innerWidth < 768;
     let scrollAmount;
     if (isMobile) {
-      // On mobile, scroll by the width of one card plus gap
+      //scroll by the width of 1 card+gap
       const cardWidth = container.scrollWidth / categories.length;
       scrollAmount = cardWidth;
     } else {
-      // On desktop, scroll by full container width to show next 3
+      //scroll by full container width to show next 3
       const containerWidth = container.offsetWidth;
       scrollAmount = containerWidth;
     }
@@ -85,14 +82,14 @@ const Categories = () => {
                   </div>
                   <h3
                     className={`w-full sm:w-[130px] md:w-[138px] h-auto font-['Poppins'] font-medium text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] leading-snug text-[#333333] transition-colors duration-200 group-hover:text-white whitespace-nowrap flex flex-col justify-end mt-2 sm:mt-4 md:mt-[34px] py-[8px] sm:py-[10px] md:py-[11px] ${
-                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-2 md:ml-4 lg:ml-[16px]' : 'mx-auto'
+                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-2 md:ml-4 lg:ml-[40px]': 'mx-auto'
                     }`}
                   >
                     {cat.name}
                   </h3>
                   <p
                     className={`w-full sm:w-[140px] md:w-[150px] h-auto font-['Poppins'] font-normal text-[18px] sm:text-[20px] md:text-[22px] leading-[100%] text-[#333333] flex items-center mx-auto transition-colors duration-200 group-hover:text-white ${
-                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-4 md:ml-6 lg:ml-10' : ''
+                      cat.name === 'Chicken Pizza' ? 'ml-0 sm:ml-4 md:ml-6 lg:ml-16' : ''
                     }`}
                   >
                     Order Now
@@ -105,6 +102,13 @@ const Categories = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="text-center mt-8">
+          <button className="bg-[#00B0C8] w-full max-w-[295px] h-[60px] sm:h-[70px] md:h-[80px] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg md:text-xl font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
+            <span className="font-['Poppins'] font-semibold text-[18px] sm:text-[22px] md:text-[26px] leading-[100%] tracking-[0%] text-white w-full text-center">
+              See more
+            </span>
+          </button>
         </div>
       </div>
     </section>
