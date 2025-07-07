@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="lg:mt-[154px] lg:mb-[154px] lg:space-y-6 space-y-4">
               <div>
                 <h3 className="lg:w-[388px] lg:h-[58px] lg:text-[22px] md:text-[20px] text-[18px] font-bold lg:mb-[28px] md:mb-6 mb-4 lg:leading-[29px] md:leading-[26px] leading-[24px]">
-                  Get the latest information and <br className="hidden lg:block" />
+                  Get the latest information <br className="hidden lg:block" />
                   <span className="lg:hidden">and </span>subscribe to our newsletter
                 </h3>
               </div>

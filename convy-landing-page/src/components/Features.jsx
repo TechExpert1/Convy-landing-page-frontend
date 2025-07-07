@@ -4,7 +4,7 @@ const Features = () => {
       <div className="max-w-[1161px] mx-auto">
         {/*cards container */}
         <div className="flex items-center w-full max-w-full bg-white shadow-[0px_2px_7px_2px_#0000001A] border border-gray-100 rounded-[15px] sm:rounded-[20px] px-4 sm:px-6 md:px-[34px] py-4 sm:py-6 md:py-[34px] -mt-8 sm:-mt-12 md:-mt-[56px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-4 md:gap-6 lg:gap-8 w-full">
             
             {/* Fast Delivery */}
             <div className="flex items-start space-x-3 sm:space-x-4">

@@ -22,7 +22,31 @@ line-height: 100%;
 letter-spacing: 0%;
 
 
+for mobile view: (dont change laptop view, adjust tablet view accordingly)
+blue badge:
+width: 168;
+height: 39;
 
+"Your Favorite Meals Delivered Fresh!" text:
+font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 36px;
+
+"Order from the best restaurants in town at the tap of a button." text:
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+
+order now button:
+width: 354;
+height: 42;
+order now text:
+font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 13px;
 
 TODO LIST:
    -Fix the position: 'absolute (/fixed)' problem
