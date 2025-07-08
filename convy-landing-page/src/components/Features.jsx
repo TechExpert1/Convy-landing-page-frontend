@@ -1,9 +1,9 @@
 const Features = () => {
   return (
-    <div className="bg-white py-6 sm:py-8 md:py-12 px-4 sm:px-8 md:px-16">
-      <div className="max-w-[1161px] mx-auto">
+    <div className="bg-white py-6 sm:py-8 md:py-12 px-4 sm:px-4 md:px-16">
+      <div className="max-w-[1161px] mx-auto lg:flex lg:justify-center lg:pl-9 sm:pl-0">
         {/*cards container */}
-        <div className="flex items-center w-full max-w-full bg-white shadow-[0px_2px_7px_2px_#0000001A] border border-gray-100 rounded-[15px] sm:rounded-[20px] px-4 sm:px-6 md:px-[34px] py-4 sm:py-6 md:py-[34px] -mt-8 sm:-mt-12 md:-mt-[56px]">
+        <div className="flex items-center w-[335px] sm:w-full md:w-[1000px] bg-white shadow-[0px_2px_7px_2px_#0000001A] border border-gray-100 rounded-[15px] sm:rounded-[20px] px-4 sm:px-3 md:px-[34px] py-4 sm:py-6 md:py-[34px] -mt-8 sm:-mt-12 md:-mt-[26px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-4 md:gap-6 lg:gap-8 w-full">
             
             {/* Fast Delivery */}

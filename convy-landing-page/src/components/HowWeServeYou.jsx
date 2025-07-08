@@ -20,7 +20,7 @@ const HowWeServeYou = () => {
           {serveBoxes.map(({ image, title, size }) => (
             <div
               key={title}
-              className="w-full lg:max-w-[354px] sm:w-[354px] h-[340px] md:h-[401px] sm:h-[182px] flex flex-col items-center justify-between lg:rounded-[20px] sm:rounded-[5px] p-8 mb-6 border border-[#00000033] transition-colors duration-200 group bg-white hover:bg-[#00B0C8] hover:border-[#00B0C8] shadow-[0px_2px_7px_0px_#0000001F] mx-auto"
+              className="w-full lg:max-w-[354px] sm:w-[334px] h-[340px] md:h-[401px] sm:h-[182px] flex flex-col items-center justify-between lg:rounded-[20px] sm:rounded-[5px] p-8 mb-6 border border-[#00000033] transition-colors duration-200 group bg-white hover:bg-[#00B0C8] hover:border-[#00B0C8] shadow-[0px_2px_7px_0px_#0000001F] mx-auto"
             >
               <div className="w-full flex items-center justify-center flex-grow">
                 <img
@@ -39,7 +39,7 @@ const HowWeServeYou = () => {
             </div>
           ))}
         </div>
-        <div className="w-full max-w-[1240px] bg-[#00B0C81A] rounded-[28px] p-4 sm:p-8 md:p-12 pt-0 mt-10 md:mt-[133px] mx-auto">
+        <div className="w-full max-w-[1240px] bg-[#00B0C81A] rounded-[28px] p-4 sm:p-3 md:p-12 pt-0 mt-4 sm:mt-3 md:mt-[133px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="flex justify-center items-center -mt-16 sm:-mt-[65px] md:-mt-[130px] lg:-mt-[130px] md:-ml-[200px]">
               <img
@@ -47,7 +47,7 @@ const HowWeServeYou = () => {
                 className="w-[180px] h-[350px] sm:w-[98px] sm:h-[204px] md:w-[323px] md:h-[695px] object-contain rounded-b-[40px] sm:rounded-b-[10px] md:rounded-b-[40px] rounded-t-[40px] sm:rounded-t-[10px]"
               />
             </div>
-            <div className="font-['Poppins'] mt-6 sm:mt-0 md:mt-[40px] lg:-ml-[150px] text-left sm:text-center">
+            <div className="font-['Poppins'] mt-6 sm:-mt-4 md:mt-[40px] lg:-ml-[150px] text-left sm:text-center">
               <h2 className="text-[#00B0C8] max-w-[316px] font-medium text-[34px] sm:text-[12px] md:text-[34px] mb-[19px] sm:mb-[6px] md:mb-[19px] lg:text-left sm:text-center">
                 Download the app
               </h2>
