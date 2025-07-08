@@ -41,7 +41,7 @@ const HowWeServeYou = () => {
         </div>
         <div className="w-full max-w-[1240px] bg-[#00B0C81A] rounded-[28px] p-4 sm:p-3 md:p-12 pt-0 mt-4 sm:mt-3 md:mt-[133px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="flex justify-center items-center -mt-16 sm:-mt-[65px] md:-mt-[130px] lg:-mt-[130px] md:-ml-[200px]">
+            <div className="flex justify-center items-center -mt-16 sm:-mt-[50px] md:-mt-[130px] lg:-mt-[130px] md:-ml-[200px]">
               <img
                 src="/images/PhoneMockup.png"
                 className="w-[180px] h-[350px] sm:w-[98px] sm:h-[204px] md:w-[323px] md:h-[695px] object-contain rounded-b-[40px] sm:rounded-b-[10px] md:rounded-b-[40px] rounded-t-[40px] sm:rounded-t-[10px]"
@@ -52,7 +52,7 @@ const HowWeServeYou = () => {
                 Download the app
               </h2>
               <h3 className="text-[40px] sm:text-[14px] md:text-[40px] max-w-[469px] font-bold text-[#333333] mb-[19px] sm:mb-[6px] md:mb-[19px] leading-tight lg:text-left sm:text-center">
-                Get the App, Savor the<br />Convenience
+                Get the App, Savor the Convenience
               </h3>
               <p className="text-[#333333] mb-[19px] sm:mb-[8px] md:mb-[19px] font-normal text-[28px] sm:text-[9px] md:text-[28px] w-full max-w-[696px] leading-relaxed lg:text-left sm:text-center">
                 Delicious meals are just a tap away - download<br className="hidden md:block" />

@@ -103,7 +103,7 @@ const Categories = () => {
             ))}
           </div>
         </div>
-        <div className="text-center mt-8 sm:mt-4 md:mt-8">
+        <div className="text-center mt-8 sm:mt-2 md:mt-8">
           <button className="bg-[#00B0C8] w-full lg:w-[295px] sm:w-[334px] h-[60px] sm:h-[38px] md:h-[80px] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-[14px] md:text-xl font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
             <span className="font-['Poppins'] font-semibold text-[18px] sm:text-[14px] md:text-[26px] leading-[100%] tracking-[0%] text-white w-full text-center">
               See more
