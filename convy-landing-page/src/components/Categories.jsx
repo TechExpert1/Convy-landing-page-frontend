@@ -36,12 +36,18 @@ const Categories = () => {
   };
 
   return (
-    <section className="py-6 sm:py-8 md:py-10 lg:py-[28px] px-4 sm:px-2 md:px-8 lg:px-16">
-      <div className="max-w-[1242.55px] mx-auto px-2 sm:px-2 md:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row w-full justify-center md:justify-between items-center mb-6 sm:mb-2 md:mb-[27px] gap-3 sm:gap-28">
-          <h2 className="w-full sm:w-full md:w-[350px] h-auto md:h-[54px] font-['Poppins'] font-medium text-[24px] sm:text-[18px] md:text-[32px] whitespace-nowrap lg:text-[36px] leading-snug text-[#00B0C8] ml-0 sm:ml-[0px] md:-ml-[55px] mb-2 md:mb-0 text-left self-start">
-            Popular Categories
-          </h2>
+    <section className="py-6 sm:py-8 md:py-10 lg:py-[28px] px-6 sm:px-3 md:px-8 lg:px-16">
+      <div className="max-w-[1242.55px] mx-auto px-0 sm:px-2 md:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row w-full justify-between items-center mb-6 sm:mb-2 md:mb-[27px] gap-3 sm:gap-8">
+          <div className="flex flex-col">
+            <h2 className="w-full sm:w-full md:w-[350px] h-auto md:h-[54px] font-['Poppins'] font-medium text-[24px] sm:text-[16px] md:text-[32px] whitespace-nowrap lg:text-[36px] leading-snug text-[#00B0C8] ml-0 sm:ml-[0px] md:-ml-[55px] mb-2 md:mb-0 text-left self-start">
+              Popular Categories
+            </h2>
+            <p className="w-auto md:w-[698px] h-auto md:h-[120px] font-['Poppins'] font-bold text-[22px] sm:text-[14px] md:text-[36px] lg:text-[40px] leading-snug text-[#333333] ml-0 md:ml-[-55px] text-center sm:text-left">
+              From your favorite restaurants to<br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>your doorstep!
+            </p>
+          </div>
           <div className="flex space-x-2 sm:space-x-3 md:space-x-4 mr-0 md:mr-[-35px]">
             <button
               onClick={() => scroll('left')}
@@ -61,11 +67,6 @@ const Categories = () => {
             </button>
           </div>
         </div>
-
-        <p className="w-auto md:w-[698px] h-auto md:h-[120px] font-['Poppins'] font-bold text-[22px] sm:text-[16px] md:text-[36px] lg:text-[40px] leading-snug text-[#333333] mb-6 sm:mb-8 ml-0 md:ml-[-55px] text-center sm:text-left">
-          From your favorite restaurants to<br className="hidden sm:block" />
-          <span className="sm:hidden"> </span>your doorstep!
-        </p>
 
         {/*scrollable container for categories*/}
         <div className="overflow-hidden">
@@ -104,7 +105,7 @@ const Categories = () => {
           </div>
         </div>
         <div className="text-center mt-8 sm:mt-2 md:mt-8">
-          <button className="bg-[#00B0C8] w-full lg:w-[295px] sm:w-[334px] h-[60px] sm:h-[38px] md:h-[80px] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-[14px] md:text-xl font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
+          <button className="bg-[#00B0C8] w-[calc(100vw-26px)] lg:w-[295px] sm:w-full h-[60px] sm:h-[38px] md:h-[80px] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-[14px] md:text-xl font-semibold hover:bg-cyan-600 transition-colors flex items-center justify-center mx-auto">
             <span className="font-['Poppins'] font-semibold text-[18px] sm:text-[14px] md:text-[26px] leading-[100%] tracking-[0%] text-white w-full text-center">
               See more
             </span>

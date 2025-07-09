@@ -44,7 +44,7 @@ const Footer = () => {
                 <input type="email" placeholder="Enter email" className="w-full h-full lg:px-6 md:px-5 px-4 md:rounded-[17px] sm:rounded-[7.2px] text-[#4F4E4E] placeholder-[#4F4E4E] bg-white lg:text-[17px] md:text-[16px] sm:text-[8px] text-[15px] font-normal pr-16"
                 />
                 <button className="absolute right-2 top-1/2 -translate-y-1/2 px-2 rounded-full flex items-center justify-center">
-                  <img src="/images/icons/send.png" className="lg:w-[33px] lg:h-[33px] md:w-[28px] md:h-[28px] sm:w-[11.5px] sm:h-[11.5px] w-[25px] h-[25px]"/>
+                  <img src="/images/icons/send.png" className="lg:w-[33px] lg:h-[33px] md:w-[28px] md:h-[28px] sm:w-[14px] sm:h-[14px] w-[25px] h-[25px]"/>
                 </button>
               </div>
             </div>

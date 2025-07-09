@@ -20,7 +20,7 @@ const HowWeServeYou = () => {
           {serveBoxes.map(({ image, title, size }) => (
             <div
               key={title}
-              className="w-full lg:max-w-[354px] sm:w-[334px] h-[340px] md:h-[401px] sm:h-[182px] flex flex-col items-center justify-between lg:rounded-[20px] sm:rounded-[5px] p-8 mb-6 border border-[#00000033] transition-colors duration-200 group bg-white hover:bg-[#00B0C8] hover:border-[#00B0C8] shadow-[0px_2px_7px_0px_#0000001F] mx-auto"
+              className="w-[calc(100vw-26px)] lg:max-w-[354px] sm:w-full h-[340px] md:h-[401px] sm:h-[182px] flex flex-col items-center justify-between lg:rounded-[20px] sm:rounded-[5px] p-8 mb-6 border border-[#00000033] transition-colors duration-200 group bg-white hover:bg-[#00B0C8] hover:border-[#00B0C8] shadow-[0px_2px_7px_0px_#0000001F] mx-auto"
             >
               <div className="w-full flex items-center justify-center flex-grow">
                 <img
