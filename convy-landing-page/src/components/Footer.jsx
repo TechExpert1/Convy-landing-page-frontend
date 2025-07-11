@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <>
@@ -36,14 +34,14 @@ const Footer = () => {
             <div className="lg:mt-[154px] lg:mb-[154px] lg:space-y-6 space-y-4 sm:ml-4 md:ml-0 sm:-mt-4 md:mt-0">
               <div>
                 <h3 className="lg:w-[388px] lg:h-[58px] lg:text-[22px] md:text-[20px] sm:text-[10px] text-[18px] font-bold lg:mb-[28px] md:mb-6 mb-4 lg:leading-[29px] md:leading-[26px] sm:leading-snug leading-[24px]">
-                  Get the latest information <br className="hidden lg:block" />
+                  Get the latest information <span className="hidden lg:inline">and</span><br className="hidden lg:block" />
                   <span className="lg:hidden">and </span>subscribe to our newsletter
                 </h3>
               </div>
               <div className="relative lg:w-[380px] lg:h-[68px] md:w-[340px] md:h-[60px] sm:w-[161px] sm:h-[29px] w-full h-[56px]">
                 <input type="email" placeholder="Enter email" className="w-full h-full lg:px-6 md:px-5 px-4 md:rounded-[17px] sm:rounded-[7.2px] text-[#4F4E4E] placeholder-[#4F4E4E] bg-white lg:text-[17px] md:text-[16px] sm:text-[8px] text-[15px] font-normal pr-16"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 px-2 rounded-full flex items-center justify-center">
+                <button className="absolute right-1 top-1/2 -translate-y-1/2 md:px-2 sm:px-[6px] rounded-full flex items-center justify-center">
                   <img src="/images/icons/send.png" className="lg:w-[33px] lg:h-[33px] md:w-[28px] md:h-[28px] sm:w-[14px] sm:h-[14px] w-[25px] h-[25px]"/>
                 </button>
               </div>
